@@ -1,0 +1,17 @@
+<video
+  controls
+  width="703"
+  height="468"
+  #video
+>
+<button (click) = play()> Play </button>
+  <source
+    src="/assets/Big Buck Bunny 60fps 4K - Official Blender Foundation Short Film.mp4"
+    type="video/mp4"
+  />
+</video>
+<p>{{ timeStart }} Seconds Left....</p>
+<button (click)="startTimer(video)">Start Timer</button>
+<button (click)="pauseTimer()">Pause</button>
+
+<button (click)="pauseOrPlay(video)">pause/play</button>
